@@ -16,14 +16,14 @@ pipeline {
 
         stage('Build Project') {
             steps {
-                sh 'chmod +x calculator.py'
+                sh 'chmod u+x calculator.py'
                 sh 'python3 calculator.py'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'chmod +x test_calculator.py'
+                sh 'chmod u+x test_calculator.py'
                 sh 'python3 -m unittest test_calculator.py || echo "Tests failed"'
             }
         }

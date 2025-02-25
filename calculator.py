@@ -36,7 +36,7 @@ def main():
             choice = input("Enter choice (1-5): ")
 
         if choice == "1":
-            num = float(input("Enter number: ")) if not is_automated else float(next(predefined_inputs))
+            num = float(input("Enter the number: ")) if not is_automated else float(next(predefined_inputs))
             print(f"Square Root of {num} is: {square_root(num)}")
         elif choice == "2":
             num = int(input("Enter number: ")) if not is_automated else int(next(predefined_inputs))

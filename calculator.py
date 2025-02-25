@@ -25,7 +25,7 @@ def main():
         print("\nScientific Calculator")
         print("1. Square Root")
         print("2. Factorial")
-        print("3. Natural  Logarithm")
+        print("3. Natural Logarithm")
         print("4. Power Function")
         print("5. Exit")
         

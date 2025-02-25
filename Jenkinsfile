@@ -27,6 +27,7 @@ pipeline {
             chmod u+x test_calculator.py
             pip3 install --upgrade pip
             pip3 install pytest
+            export PATH=$HOME/.local/bin:$PATH  # Add pytest to PATH
             pytest --maxfail=1 --disable-warnings --tb=short
         '''
     }

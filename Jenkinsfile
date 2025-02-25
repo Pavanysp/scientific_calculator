@@ -17,7 +17,7 @@ pipeline {
         stage('Build Project') {
             steps {
                 sh 'chmod u+x calculator.py'
-                sh 'python3 calculator.py'
+                sh 'python3 calculator.py --auto'
             }
         }
 

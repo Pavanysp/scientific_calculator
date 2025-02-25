@@ -27,7 +27,7 @@ pipeline {
             chmod u+x test_calculator.py
             pip3 install --upgrade pip
             pip3 install pytest
-            python3 -m unittest discover -s . -p "test_*.py"
+            pytest --maxfail=1 --disable-warnings --tb=short
         '''
     }
 }

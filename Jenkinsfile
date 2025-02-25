@@ -24,6 +24,8 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh 'chmod u+x test_calculator.py'
+                pip3 install --upgrade pip
+                pip3 install pytest
                 sh 'python3 -m unittest test_calculator.py || echo "Tests failed"'
             }
         }
